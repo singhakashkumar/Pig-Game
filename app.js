@@ -62,7 +62,7 @@ function hold()
     if(playing){
         score[currentPlayer]+=roundScore;
         document.querySelector('#score-'+currentPlayer).textContent=score[currentPlayer];
-        if(score[currentPlayer]>=20)
+        if(score[currentPlayer]>=50)
         {
             document.querySelector('.player-'+currentPlayer+'-panel').classList.add('winner');
             document.querySelector('#name-'+currentPlayer).textContent='Winner!!!';
